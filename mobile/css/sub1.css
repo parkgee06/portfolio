@@ -1,0 +1,68 @@
+/* 서브 이미지 영역 - 글씨 */
+.sub_visual>span::before{
+    content: 'About KOLON GLOBAL';
+    display: block; position: absolute;
+    width: 100%; top: -15px; text-align: center;
+    font-size: 1rem; font-weight: 200;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, .3);}
+
+/* 중간 메뉴 */
+.sub_nav li{
+    width: 33.333%;
+    float: left;}
+
+/* ---------- 본문 영역 ---------- */
+
+/* ---------- Sub1_1 ---------- */
+/* CEO 인사말 */
+#content .ceo_message .sub1_cont1{
+    margin: 20px 0 30px 0;
+    display: block; text-align: center;}
+#content .ceo_message .sub1_cont1>img{width: 100%; }
+#content .ceo_message .sub1_cont1_bottom{
+    font-size: 1rem; font-weight: 600;
+    display: block; text-align: right;
+    margin-left: auto; margin-right: auto; }
+#content .global_vision>p{
+    margin-bottom: 50px; }
+#content .global_vision>img{
+    display: block;
+    margin: 0 auto; }
+
+/* ---------- Sub1_3 ---------- */
+/* 오시는 길 */
+#content .location #map{
+    border: 1px solid ccc;
+    width: 95%; height: 360px; margin: auto;
+    margin-bottom: 30px; }
+#content .location ul{
+    margin: auto; }
+#content .location ul li{
+    display: flex; gap: 15px;justify-content: center;
+    margin-bottom: 15px; }
+#content .location ul li>p{
+    padding: 5px 0; }
+#content .location ul li>img{
+    width: 30px; height: 30px; }
+
+/* 버스 */
+#content .bus_content .bus_info dl{overflow: hidden; margin-bottom: 30px;}
+#content .bus_content .bus_info dt{
+    width: 60px;  color: #fff;
+    padding: 1px 0 3px 0;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    float: left;
+    font-size: .95rem; font-weight: 500;}
+#content .bus_content .bus_info dl dd:nth-of-type(1){
+    font-weight: 500; }
+#content .bus_content .bus_info .bus_blue{background: #1888ce;}
+#content .bus_content .bus_info .bus_green{background: #0bb12f; }
+#content .bus_content .bus_info .bus_red{ background: #db2209; }
+#content .bus_content .bus_info .bus dd{margin-left: 95px;}   
+#content .bus_content .bus_info dl dd{margin-bottom: 10px; margin-left: 69px;}
+#content .bus_content .bus_info dl dd:nth-of-type(2){clear: both;}
+
+/* 지하철 */
+#content .subway_content p{text-align: center;}
