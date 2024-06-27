@@ -5,7 +5,10 @@
 
 #content .content_area .location{overflow: hidden; margin-bottom: 100px;}
 #content .content_area div:first-of-type{width: 290px; float: left;}
-#content .content_area .location #map{width:900px ;height: 600px; float: right;border: 1px solid red;}
+#content .content_area .location #map{
+    width:900px ;height: 600px; float: right;
+    /* border: 1px solid red; */
+}
 #content .content_area .location dt{font-size: 1.3em; font-weight: 600; margin: 20px 0 10px;}
 #content .content_area .location dd{line-height: 1.5em;}
 

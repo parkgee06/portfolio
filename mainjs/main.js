@@ -1,12 +1,12 @@
 //네트워크 기능구현
 $('#content .network ul li a').css('opacity','.6');
 $('#content .network ul li a').mouseenter(function(){
-    var ind = $(this).index('#content .network ul li a');  // 0~8
+    var ind = $(this).index('#content .network ul li a');  // 0~9
     //console.log(ind);
     $('#content .network img').attr('src','./mainimages/World_Map_'+(ind+1)+'.svg');
     $('#content .network ul li').removeClass('check');
     $(this).parent('li').addClass('check').hide().fadeIn('slow');
-    $('#content .network ul li a').css('opacity','.6');
+    $('#content .network ul li a').css('opacity','.3');
     $(this).css('opacity','1');
 });
 
@@ -51,12 +51,12 @@ var swiper = new Swiper('.swiper-container', {
   });
 
   $('.business').css({'background':'url(./mainimages/bus0.jpg)'});
- 
+
 
   swiper.on('transitionEnd', function() {
-       var ind = swiper.realIndex;
-       $('.business').css({'background':'url(./mainimages/bus'+ind+'.jpg)'});
-     
+    var ind = swiper.realIndex;
+    $('.business').css({'background':'url(./mainimages/bus'+ind+'.jpg)'});
+  
   });
 
 //공지사항 슬라이드 기능구현
