@@ -1,24 +1,20 @@
     var audio=document.getElementById('main_audio');
     var currnum = 1;  //현재 선택된 사운드 순서
     var ps=false; //false(stop), true(play)
-    var track = ['Beyond The Sea','Under the Sea','King of the Beach'];
-    var tit = ['Robbie Williams','The Little Mermaid','Wavves'];
 
     function changeSound(num){  // 1 2 3
         $('.playerImg img').attr('src','./images/con_4/album_'+num+'.jpg');
-        $('#main_audio').attr('src','./music/music'+num+'.m4a');
-        audio.play();
-        $('.playerImg img').addClass("current");
-        $('#controlPlay i').removeClass().addClass('fa-solid fa-stop');
+         $('#main_audio').attr('src','./music/music'+num+'.mp3');
+         audio.play();
+         $('.playerImg img').addClass("current");
+         $('#controlPlay i').removeClass().addClass('fa-solid fa-stop');
 
-        $('.playInfo li a').removeClass('curr');
-        $('.playInfo li:eq('+(num-1)+') a').addClass('curr');
-        currnum = num;
-        ps=true;
+         $('.playInfo li a').removeClass('curr');
+         $('.playInfo li:eq('+(num-1)+') a').addClass('curr');
+         currnum = num;
+         ps=true;
 
-        $('.playerWrap dt').text(track[num-1]);
-        $('.playerWrap dd').text(tit[num-1]);
-        
+       
     }
 
     $('#controlPlay').click(function(e){
@@ -47,11 +43,8 @@
         $('#controlPlay i').removeClass().addClass('fa-solid fa-stop');
         ps=true;
 
-        $('#main_audio').attr('src','./music/music'+currnum+'.m4a');
+        $('#main_audio').attr('src','./music/music'+currnum+'.mp3');
         audio.play();
-
-        $('.playerWrap dt').text(track[currnum-1]);
-        $('.playerWrap dd').text(tit[currnum-1]);
     }
 
     $('#controlNext').click(function(e){  //다음버튼 클릭시

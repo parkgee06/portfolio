@@ -25,15 +25,15 @@ $(document).ready(function() {
       $("#content").css('margin-top',screenHeight);
       
       if( screenSize > 768){
-          $("#imgBG").attr('src','./images/sub'+value+`/sub${value}_big.jpg`);
+          $("#imgBG").attr('src','./images/sub'+value+'_big.jpg');
       }else{
-          $("#imgBG").attr('src','./images/sub'+value+`/sub${value}_small.jpg`);
+          $("#imgBG").attr('src','./images/sub'+value+'_small.jpg');
       }
   }
 
   screen_size();  //최초 실행시 호출
   
-  $(window).resize(function(){ 
+ $(window).resize(function(){ 
       screen_size();
   }); 
   
